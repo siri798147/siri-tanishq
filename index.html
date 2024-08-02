@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tanishq</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+  box-sizing: border-box;
+        }
+        
+        .navbar{
+            background-color:#f2e9e9;
+            text-align:center ;
+            padding:px;
+            position:sticky;
+            top:0px;
+            z-index:1;
+            display: flex;
+        }
+        .navbar img{
+           margin-left: 70px;
+        }
+        
+        
+        
+        .container i{
+            color: darkred;
+            margin-left: 12px;
+        }
+        
+        .icons{
+            display: flex;
+            font-size:3px ;
+            gap: 30px;
+            margin-top: 17px;
+
+
+        }
+        .icons p{
+            font-size: 12px;
+            font-family: 'open sans light'.sans-serif;
+            color: darkred;
+            font-family: nunito_sansregular !important;
+
+        }
+        .icons i{
+            color: darkred;
+        }
+        .navbar a{
+            text-decoration: none;
+            color:black;
+            margin-left:2%;
+            font-family:sans-serif;
+            font-size:18px;
+        }
+         .container{
+            background-color: white;
+            width: 50%;
+            height: 9px;
+            padding: 17px;
+            display: flex;
+            margin: 20px;
+            
+
+        }
+        .container input{
+            border: none;
+            outline: none;
+            flex: 1;
+            margin-left:0px;
+            padding: 10px;
+
+
+        }
+
+        .category{
+            padding: 19px;
+        }
+
+        .category a{
+            text-decoration: none;
+            align-content: center;
+            color: black;
+            margin-left: 3%;
+            font: normal normal normal 0.875rem / 1.188rem "nunito_sansregular";
+}
+            font-size: 15px;
+
+        }
+        h2{
+            font-size: 38px;
+            color: darkred;
+            font-family: nunito_sansbold;
+        }
+        p{
+            font-size: 20px;
+        }
+.container1{
+            width:93%;
+            display:flex;
+            padding:1px;
+            margin:0;
+            justify-content: space-evenly;    
+        }
+
+        .chic-bangle{
+            border:1px solid wheat;
+            width:18%;
+            padding:1%;
+            margin: 2%;
+            background-color: white;
+        } 
+        .dainty-floral{
+            border:1px solid wheat;
+            width:18%;
+            padding:1%;
+            margin: 2%;
+            border-radius: 2px;
+            background-color: white;
+        }
+        .grand-filigree{
+            border:1px solid wheat;
+            width:18%;
+            padding:1%;
+            margin: 2%;
+            background-color: white;
+        }
+        .soft-flower{
+            border:1px solid wheat;
+
+            width:18%;
+            padding:1%;
+            margin: 2%;
+            background-color: white;
+        }
+        .circles{
+            color: darkred;
+
+
+        }
+       
+            
+            
+       .container2{
+         width:92%;
+      display: flex;
+            padding:1px;
+            margin:0;
+            justify-content: space-evenly;    
+
+       }
+        .mangalsutras{
+            border:1px solid wheat;
+            width:19%;
+
+
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px;  
+        }
+        .gold-coins{
+            border:1px solid wheat;
+            width:19%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px;  
+        } 
+        .earrings{
+            border:1px solid wheat;
+            width:19%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px;  
+        } 
+        .finger-rings{
+            border:1px solid wheat;
+            width:19%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px;  
+        } 
+        .pendants{
+            border:1px solid wheat;
+            width:19%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px;  
+        } 
+        .nosepins{
+            border:1px solid wheat;
+            width:19%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px;  
+        } 
+        
+        .container3{
+            display:flex;
+             width:92%;
+            padding:0.5px;
+            margin:0;
+            justify-content: space-evenly;  
+        }
+            .chains{
+            border:1px solid wheat;
+            width:19%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px;  
+            }
+            .bracelets{
+            border:1px solid wheat;
+            width:19%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px;
+            }
+            .bangles{
+            border:1px solid wheat;
+            width:19%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px;
+            }
+            .neckwear{
+            border:1px solid wheat;
+            width:19%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px;
+            }
+            .necklace-set{
+            border:1px solid wheat;
+            width:19%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px;
+            }
+            .pendant-sets{
+            border:1px solid wheat;
+            width:19%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px;
+            }
+            h3{
+             color: darkred;
+             position: left;   
+            }
+            .container4{
+                display:flex;
+                width:92%;
+            }
+
+            .string-it{
+             border:1px solid wheat;
+            width:30%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px   
+            }
+            .italic-connection{
+            border:1px solid wheat;
+            width:30%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px
+            }
+            .rings{
+            border:1px solid wheat;
+            width:30%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px
+            }
+            .container5{
+                display:flex;
+                width:92%;
+            }
+            .img1{
+            border:1px solid wheat;
+            width:40%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px;
+            }
+            .img2{
+             border:1px solid wheat;
+            width:40%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px;
+            }
+            .img3{
+             border:1px solid wheat;
+            width:40%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px;
+            }
+            .container6{
+                display:flex;
+                width:92%;
+            } 
+            .men{
+            border:1px solid wheat;
+            width:30%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px   
+            } 
+            .kids{
+            border:1px solid wheat;
+            width:30%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px
+            } 
+            .women{
+            border:1px solid wheat;
+            width:30%;
+            padding:0%;
+            margin: 2%;
+            border-radius: 5px
+            } 
+            
+            
+            .round-images img{
+                border-radius: 50%;
+
+               
+
+            }
+            .round-images{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding-left:30% ;
+                margin-right:20px;
+
+            }
+
+
+            .neckset{
+            border:1px solid wheat;
+            width:18%;
+            padding:1%;
+            margin: 2%;
+            background-color: white;
+        }
+        .container7{
+            width:100%;
+            display:flex;
+            padding:1%;
+            margin:0;
+            justify-content: space-evenly;    
+        }
+        .layer-chain{
+            box-shadow: 2px;
+            width:21%;
+            padding:1%;
+            margin: 2%;
+            background-color: white;
+        } 
+        .leaf-drop{
+            box-shadow: 2px;
+            width:21%;
+            padding:1%;
+            margin: 2%;
+            background-color: white;
+        } 
+        .container8{
+            border-box:10%;
+            display: flex;
+            margin:60px;
+
+            background-color: #f6eeee;
+        }
+        .search-image{
+            padding: 2%;
+        }
+        
+h3{
+    color:darkred;
+}
+
+
+video{
+    border-radius: 60px;
+    padding:20px;
+}
+.goldcoins{
+     width:100%;
+            display:flex;
+            padding:1%;
+            margin:0;
+            justify-content: space-evenly; 
+
+}
+.simple-gold{
+            border:1px solid wheat;
+            width:18%;
+            padding:1%;
+            margin: 2%;
+            background-color: white;
+        } 
+        .goldcoin{
+            border:1px solid wheat;
+            width:18%;
+            padding:1%;
+            margin: 2%;
+            border-radius: 2px;
+            background-color: white;
+        }
+        .goldcoins img{
+            background-color: #fff;
+        }
+        .goldbiscuit{
+            border:1px solid wheat;
+            width:18%;
+            padding:1%;
+            margin: 2%;
+            background-color: white;
+        }
+        .classic-cable{
+            border:1px solid wheat;
+
+            width:18%;
+            padding:1%;
+            margin: 2%;
+            background-color: white;
+        }
+        .circles i{
+            width: 30px;
+            font-size:14px;
+            color: gray;
+        }
+        .circles a{
+            color: darkred;
+            font-size:14px;
+            padding: 6px;
+
+        }
+        .circles h1{
+            padding-top: 35px;
+        }
+        h1{
+            color: darkred;
+            
+    letter-spacing: .0313rem;
+            font-size: 2.5rem;
+            font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+
+        }
+        .footer {
+    background-color: #efe4e3;
+    padding: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 25px;
+    color: darkred;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 20px;
+
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+    padding:15px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #333;
+
+}
+.footer-section p{
+    color:darkred;
+
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section img {
+    max-width: 100%;
+    height: auto;
+    padding:15px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    margin-left: 10px;
+}
+
+}
+
+
+
+ 
+ </style>
+</head>
+<body>
+    <nav class="navbar">
+
+        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTQuODMgNzQuNzkiPjxkZWZzPjxzdHlsZT4uYntmaWxsOiM4MzI3Mjk7ZmlsbC1ydWxlOmV2ZW5vZGQ7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJiIiBkPSJNMzguNzksNy41NWMtLjYyLTIuOTEsMS4zMi01LjU2LDQuMTUtNS41Nmg3Ljk1YzIuMTIsLjA5LDQuNzctMS41OSw0Ljc3LTEuNTlWMTMuNzNjMCwxMy41MS03LjQyLDE5LjI0LTEwLjg2LDE5Ljc3LS42MiwuMjctMS4wNiwuMDktLjI2LS41Myw0LjY4LTMsNy40Mi0xMC4xNSw3LjY4LTE2LjI0VjQuNTVjLS45NywuNjItMi44MiwuNzEtMi44MiwuNzFoLTYuOTdjLTEuODUsMC0yLjgyLC42Mi0zLjYyLDIuMjltMzUuNTgsMGMuNjItMi45MS0xLjI0LTUuNTYtNC4xNS01LjU2aC03Ljk1Yy0yLjAzLC4wOS00Ljc3LTEuNTktNC43Ny0xLjU5VjEzLjczYzAsMTMuNTEsNy40MiwxOS4yNCwxMC44NiwxOS43NywuNjIsLjI3LDEuMDYsLjA5LC4yNy0uNTMtNC42OC0zLTcuNDItMTAuMTUtNy42OC0xNi4yNFY0LjU1Yy45NywuNjIsMi44MiwuNzEsMi44MiwuNzFoNy4wNmMxLjg1LDAsMi44MywuNjIsMy41MywyLjI5aDBaTTIwLjI2LDYyLjk5Yy0uNzEtMS43Ny0uMTgtMy43MSwuMjYtNC40MWg4LjAzdjQuNDFoMi4wM3YtMTkuNTFzLS42Mi0uMDktMS4wNiwuNjJjLTMsNC43Ny01LjMsNi04LjY1LDkuMzYtMi44MywyLjgyLTQuOTQsNi0zLjg5LDkuNTNoMy4yN1ptLjg4LTUuNzRoNy40MnYtOC4zOWMtMS44NSwzLjQ0LTYuMjcsNS4zLTcuNDIsOC4zOVptODQuOTMtMTUuOGMtMi41NiwyLjAzLTQuNjgsMy44LTUuODMsNi40NC0xLjI0LDIuNjUtMS41OSw2LjQ0LDAsOS43MSwxLjc3LDMuNjIsMy44LDUuNTYsNi4xOCw3Ljk0LDEuNjgsMS44NSw0Ljg2LDUuNTYsMy44LDguODMsLjc5LDAsMS44NS0xLjk0LDIuMDMtMi42NSwuNDQtMi4yOSwuMTgtMy40NC0uNzktNS4xMi0uNjItMS4xNS0xLjk0LTIuMjktMi45MS0zLjQ0LDEuNDEtMS4xNSwyLjkxLTIuODMsNC4xNS00LjUsMS41OS0yLjIxLDIuNTYtNS45MSwuNTMtOS41My0xLjg1LTMuNDQtNy4wNi02LjYyLTcuMTUtNy42OGgwWm0xLjA2LDIwLjM5Yy0yLjAzLTEuNjgtMy4yNy0zLjA5LTQuNS01LjgzLTEuMjQtMi40Ny0xLjMyLTUuMzktLjc5LTcuNDIsLjYyLTIuMjEsMi4xMi0zLjgsMy41My00Ljk0LDEuNTksMS4xNSwzLjI3LDIuNTYsNC41LDQuNTksMi4wMywzLjQ0LDIuMDMsNS45MSwuNzEsOS4yNy0uNzksMS45NC0xLjY4LDMuMDktMy40NCw0LjMzaDBaTS41Nyw0NS4wN2MtLjM1LS43MSwuMTgtMi41NiwyLjMtMi4zOEgxMy4yOGMxLjMyLC4wOSwyLjEyLS44OCwzLjgtLjcxLTIuMzgsMS45NC0yLjY1LDIuOTEtMy4wOSw0Ljc3bC0xLjY4LDEzLjY4Yy0uNDQsNS41NiwxLjE1LDEwLjE1LDUuMywxMy45NS0yLjU2LC4zNS04LjEyLTMuNzEtOC4zLTExLjEyLS4xOC0zLjcxLC44OC0xNS41NCwuODgtMTUuNTQsLjI2LTEuOTQsMS41LTMuMzUsMS41LTMuMzVIMS44Yy0uNjIsLjA5LS45NywuMDktMS4yNCwuNzFILjU3Wm04MS44NCwxNy4zOWgyLjU2di01LjIxaDYuOTd2NS40N2gyLjY1di0xOC44OWgtMi42NXYxMS45MmgtNi45N3YtMTEuOTJoLTIuNTZ2MTguNjNoMFptLTcuMTUtMTQuMjFjLS42MiwuMTgtMS4yNC0uMDktMS44NS0uNjItLjg4LS43OS0xLjI0LTEuNTktMi4zOC0yLjI5LTEuMjQtLjYyLTMtLjcxLTQuMDYsLjA5LS45NywuNzEtLjk3LDIuMywuMDksMy4xOCwyLjAzLDEuNTksNC4yNCwyLjQ3LDYuOCwzLjgsNC42OCwyLjQ3LDUuNDcsNi44LDIuMjEsOS0yLjc0LDEuODUtNi4xOCwyLjAzLTkuMjcsLjg4LTIuMzgtLjk3LTQuMjQtMi45MS00LjUtNS4zLDEuNTksMCwyLjEyLC43MSwyLjc0LDEuNjgsLjk3LDEuMzIsMS41OSwxLjg1LDMsMi40NywyLjAzLC43OSw0LjMzLC41Myw1LjY1LS4yNiwxLjk0LTEuMjQsMS42OC0zLjI3LC4yNi00LjU5LTIuOTEtMi43NC02LjUzLTMuNTMtOC41Ni01LjU2LTEuNzctMS43Ny0yLjM4LTMuNzEtLjUzLTUuNzQsMS41OS0xLjY4LDUuODMtMi4yMSw4LjMtLjA5LDEuMDYsLjk3LDEuODUsMi4xMiwyLjEyLDMuMzVoMFptLTIxLjEtMTAuMDZjMC0xLjQxLDEuMDYtMi40NywyLjQ3LTIuNDcsMS4yNCwwLDIuMzgsMS4wNiwyLjM4LDIuNDcsMCwxLjMyLTEuMTUsMi40Ny0yLjM4LDIuNDctMS40MSwwLTIuNDctMS4xNS0yLjQ3LTIuNDdabTEuMTUsNS42NWgyLjQ3djE5LjE2aC0yLjQ3di0xOS4xNlptLTE5LjI1LDE5LjE2aDEuNzd2LTEzLjE1Yy44OCwyLjU2LDUuMjEsNS45Miw1LjIxLDUuOTIsMCwwLDMuMzUsMi44Myw0Ljk0LDYuNzFsMS4wNiwuNTN2LTE5LjE2aC0xLjc3djEzLjQyYy0uOTctMi41Ni00Ljc3LTUuNTYtNC43Ny01LjU2LTIuOTEtMi41Ni00Ljg2LTYuMDktNS4zLTcuNzdsLTEuMTUtLjM1djE5LjQyaDBaIi8+PC9zdmc+" width="6%" alt="logo"/>
+       
+        <div class="container">
+        
+        <input type="search" placeholder="Search for Gold Jewellery, diamond... ">
+        <i class="fa-solid fa-camera"></i>
+        <i class="fa-solid fa-microphone"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+    
+    </div>
+    <div class="icons">
+        <a href=""><i class="fa-regular fa-gem"></i>
+            <br/>
+            <p>DIAMOND</p>
+        <a href=""><i class="fa-solid fa-store"></i>
+            <br/>
+            <p>STORE</p>
+        <a href=""><i class="fa-regular fa-user"></i>
+            <br/>
+            <p>ACCOUNT</p>
+        <a href=""><i class="fa-regular fa-heart"></i>
+            <br>
+            <p>WISHLIST</p>
+        <a href=""><i class="fa-solid fa-cart-shopping"></i>
+            <br/>
+            <p>CART</p>
+    </div>
+        
+    </nav>
+    <div class="category">
+        <a href="">ALL JEWELLERY</a>
+        <a href="">GOLD</a>
+        <a href="">DIAMOND</a>
+        <a href="">EARINGS</a>
+        <a href="">RINGS</a>
+        <a href="">DIGITAL</a>
+        <a href="">COLLECTIONS</a>
+        <a href="">WEDDING</a>
+        <a href="">GIFTING</a>
+        <a href="">GOLDEN HARVEST</a>
+        <a href="">MORE</a>
+    
+
+    </div>
+    <div class="line-design">
+        <img src ="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw717035de/homepage/HeroBanner/the-spotlight-edit-desktop.jpg" width="100%" alt="image">
+       <span class="sr-only">Next</span>
+    </div>
+     
+
+<center><h1>Diamond Best Sellers</h1><center>
+    <center><p>Dazzling diamond jewellery, now at delightful prices</p></center>
+   
+<img class ="line-design"src="https://stg.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw3fc25c81/images/home/Line-Design.svg" width="90%">
+
+
+<div class="container1">
+    
+    <div class="chic-bangle">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/images/hi-res/50D3B3VOD1A02_1.jpg" width="100%"alt="chic-bangle"/> 
+        <p>Chic Style Bangle</p>
+        <p>₹83 508</p>
+    </div>
+    <div class="dainty-floral">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/images/hi-res/50D3B2YSGAA32_1.jpg" alt="dainty floral diamond" width=100%/> 
+        <p>Dainty Floral Diamond Mangalsutra</p>
+        <p>₹70 100</p>
+    </div>
+    <div class="grand-filigree">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/images/hi-res/5029131CGABB09_1.jpg" alt="grand filigree diamond pendant" width=100%/> 
+        <p>Grand Filigree Diamond Pendant</p>
+        <p>₹81348</p>
+    </div>
+    <div class="soft-flower">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/images/hi-res/50D2J1FJRAA02_1.jpg" alt="soft flower diamond ring" width=100%/> 
+        <p>Soft Flower Diamond RIng</p>
+        <p>₹32257</p>
+        
+    </div>
+</div>
+    <div class="circles">
+          <a class="fa-solid fa-circle"></a>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+    
+        <center><h1>Shop By Category</h1>
+        <p>Browse through your favorite categories. We've got them all!</p></center>
+     </div>
+
+    <img class ="line-design"src="https://stg.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw3fc25c81/images/home/Line-Design.svg" width="90%">
+
+
+    <div class="container2">
+    <div class="mangalsutras">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwed9ca8a8/homepage/shopByCategory/diamond-mangalsutra.jpg" width="100%"alt="chic-bangle"/> 
+        <h3>Mangalsutras</h3>
+        <p>Explore   ></p>
+    </div>
+    <div class="gold-coins">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwebf0313b/homepage/shopByCategory/fod-gold-coins.jpg" width="100%"alt="gold coins"/> 
+        <h3>Gold Coins</h3>
+        <p>Explore   ></p>
+    </div>
+     <div class="earrings">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw1a3b22a4/homepage/shopByCategory/diamond-earrings.jpg" width="100%"alt="earrings"/> 
+        <h3>Earrings</h3>
+        <p>Explore   ></p>
+    </div>
+         <div class="finger-rings">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw6cba5570/homepage/shopByCategory/diamond-rings.jpg" width="100%"alt="finger rings"/> 
+        <h3>Finger Rings</h3>
+        <p>Explore   ></p>
+    </div>
+    <div class="pendants">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwc0a559df/homepage/shopByCategory/diamond-pendants.jpg" width="100%"alt="pendants"/> 
+        <h3>Pendants</h3>
+        <p>Explore   ></p>
+    </div>
+    
+<div class="nosepins">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwb917c94c/homepage/shopByCategory/diamond-nosepins.jpg" width="100%"alt="nosepins"/> 
+        <h3>Nose Pins</h3>
+        <p>Explore   ></p>
+    </div>
+</div>
+    <div class=container3>
+     <div class="chains">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwb9c91486/homepage/shopByCategory/diamond-chains.jpg" width="100%"alt="chic-bangle"/> 
+        <h3>Chains</h3>
+        <p>Explore   ></p>   
+    </div>
+    <div class="bracelets">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwd727f7fa/homepage/shopByCategory/diamond-bracelet.jpg" width="100%"alt="chic-bangle"/> 
+        <h3>Bracelets</h3>
+        <p>Explore   ></p>
+    </div>
+    <div class="bangles">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwb51b56d7/homepage/shopByCategory/diamond-bangle.jpg" width="100%"alt="chic-bangle"/> 
+        <h3>Bangles</h3>
+        <p>Explore   ></p>
+    </div>
+    <div class="neckwear">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwcebf3d17/homepage/shopByCategory/diamond-necklace.jpg" width="100%"alt="chic-bangle"/> 
+        <h3>Neckwear</h3>
+        <p>Explore   ></p>
+    </div>
+    <div class="necklace-set"> 
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw89ef1e4a/homepage/shopByCategory/diamond-necklace-set.jpg"width="100%"alt="chic-bangle"/> 
+        <h3>Necklace Set</h3>
+        <p>Explore   ></p>
+    </div>
+    <div class="pendant-sets">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw30dfe571/homepage/shopByCategory/diamond-pendant-earring-set.jpg"width="100%"alt="chic-bangle"/> 
+        <h3>Pendant Sets</h3>
+        <p>Explore   ></p>
+    </div>
+</div>
+<center><h1>Shop By Collections</h1></center>
+    <center><p>Whatever the occasion, we've got a beautiful piece of jewellery for you.</p></center>
+    <img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw78fb320b/images/home/Line-Design.svg"width="90%">
+    <div class="container4">
+    <div class="string-it">
+    <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw3db19e7a/homepage/ShopByCollection/string-it.jpg"width="100%">
+    <h3>String it</h3>
+    <p>Explore More ></p>
+</div>
+<div class="italic-connection">
+    <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwa0a42997/homepage/ShopByCollection/italian-connection.jpg"width="100%">
+    <h3>The Italic Connection</h3>
+    <p>Explore More ></p>
+</div>
+<div class="rings">
+    <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwd303e668/homepage/ShopByCollection/engagement-rings.jpg"width="100%">
+    <h3>Engagement Rings</h3>
+    <p>Explore More ></p>
+</div>
+</div>
+<h1>Pick Up Where You Left Off!</h1>
+<p>Our products tend to sell out quickly, so don't delay in completing your purchase.</p>
+<img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw78fb320b/images/home/Line-Design.svg"width="90%">
+<div class="image">
+    <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw8d40a0ea/homepage/posters/gifting-banner-desktop-wb.jpg"width="88%">
+    <h1>Top Sellers</h1>
+    <p>Love the most to bought the most</p>
+    <img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw78fb320b/images/home/Line-Design.svg"width="90%">
+
+    <div class="goldcoins">
+    <div class="simple-gold">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/images/hi-res/50D2PTBPBAA09_1.jpg" width="100%"alt="simple gold"/> 
+        <p>Stylish Cluster Diamond Bracelet</p>
+        <p>₹53025  ₹  33647</p>
+    </div>
+    <div class="goldcoin">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/images/hi-res/51D3B11IMABA00_1.jpg" width=100%/> 
+        <p>Geometric Pendant And Earrings Set</p>
+        <p>₹ 8609</p>
+    </div>
+    <div class="goldbiscuit">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/images/hi-res/51D3B1BGEAA00_1.jpg" width=100%/> 
+        <p>Stunning Intricate Bracelet</p>
+        <p>₹214223</p>
+    </div>
+    <div class="classic-cable">
+        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/images/hi-res/51D3B21EIABA00_1.jpg" alt="soft flower diamond ring" width=100%/> 
+        <p>Edgy Enamel Pendant and Earrings Set</p>
+        <p>₹26007</p>
+        
+    </div>
+</div>
+    <h1>New For You!</h1>
+    <p>Our latest releases, just for you !</p>
+    <img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw78fb320b/images/home/Line-Design.svg"width="90%">
+    <div class="container5">
+        <div class="img1">
+            <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwb292158a/homepage/NewForYou/pretty-in-pink-new.jpg" width="100%">
+        </div>
+        <div class="img2">
+            <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw901d27ee/homepage/NewForYou/trending-earrings.jpg"width=100%>
+        </div>
+        <div class="img3">
+            <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw35ac2bd0/homepage/NewForYou/modern-designs.jpg"width="100%">
+        </div>
+    </div> 
+    <h1>Shop By Gender</h1>
+    <p>First-class jewelry for first-class Men, Women & Children.</p>
+    <img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw78fb320b/images/home/Line-Design.svg"width="90%">
+
+
+    <div class="container6">
+    <div class="men">
+    <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwef4310c0/homepage/ShopByGender/Men.jpg"width="100%">
+    <h3>Men</h3>
+    <p>Explore More ></p>
+</div>
+<div class="kids">
+    <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw24db1907/homepage/ShopByGender/kid.jpg"width="100%">
+    <h3>Kids</h3>
+    <p>Explore More ></p>
+</div>
+<div class="women">
+    <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwc0abe627/homepage/ShopByGender/Woman.jpg"width="100%">
+    <h3>Women</h3>
+    <p>Explore More ></p>
+</div>
+</div>
+
+        
+<h1>Shop the Look</h1>
+<p>Discover your timeless style and reveal your unique look!</p>
+
+<img class="line-design" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw78fb320b/images/home/Line-Design.svg"width="100%">
+
+<div class="round-images">
+    <div class="work">
+<img src="https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw9cac44b6/ShopByLookImages/Desktop/CircleImages/workwear-91x91.jpg" width="">
+<p>Work wear</p>
+</div>
+<div class="sleek">
+<img src="https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dw08454781/ShopByLookImages/Desktop/CircleImages/sleek-91x91.jpg" width="">
+<p>Sleek</p>
+</div>
+<div class="elegant">
+<img src="https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwe4af9260/ShopByLookImages/Desktop/CircleImages/elegant-91x91.jpg"width="">
+<p>Elegant</p>
+</div>
+<div class="tryimage">
+<img src="https://i.pinimg.com/564x/ec/f8/46/ecf846fc934617b2f8a60f5eef6b8074.jpg" width="13%">
+<p>Try your Image!</p>
+</div>
+
+</div>
+
+
+
+<div class="container8">
+    <img class="sleek"src="https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwfe97949c/ShopByLookImages/Desktop/LargeImages/sleek-588x540.jpg" width="40%">
+
+
+    
+    <div class="layer-chain">
+
+        <img src="https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw1b13dbb1/images/hi-res/501719CQFAA00_1.jpg" width="100%"alt="layer-chain"/> 
+        <p>Delightful Surprice Beaded Layered Chains</p>
+        <p>₹143516</p>
+    
+</div>
+ 
+    <div class="leaf-drop">
+
+        <img src="https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwa9aad17a/images/hi-res/51D4MPDGBADA00_1.jpg" width="100%"alt="layer-chain"/> 
+        <p>Contemporary Leaf Drop Earrings</p>
+        <p>₹163746</p>
+    
+</div>
+</div>
+<div class="search-image">
+<img src="https://dajdiamond.com/wp-content/uploads/2022/07/Black-Wedding-Jewelry-Landscape-Banner-1024x512.png" width=20%>
+<img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwbac94b1f/images/shopbylook/look_syte.png">
+</div>
+ 
+<img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw78fb320b/images/home/Line-Design.svg" width=90%>
+
+<img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwa2f88d7f/homepage/Mia/gwtf-desktopm.jpg" width=88%>
+
+
+<video width="90%"  autoplay muted loop playsinline>
+<source src="https://staticimg.tanishq.co.in/videos/ge-dt.mp4" type="video/mp4" />
+</video> 
+    
+<div class="">
+<img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw93b25375/homepage/posters/Rivaah-Bride.jpg">
+<img scr="https://cdn.flipitnews.com/img/flips/DDd177uuNQDeQJqcaKpCUHSOuuQ5KNcx2GUB3NwW.jpg">
+<h1>Jewellery Guides</h1>
+<p>Check out our ready made guides to make your buying process easier.</p>
+
+<img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw78fb320b/images/home/Line-Design.svg">
+<div class="container9">
+<img class="metalguide" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAuOj8VaNgoAu8Z3OPL7mnCPOxip6abQB7gdsPN5mUxQXnJpB0">
+
+</div>
+<h1>Connect With Us</h1>
+<p>We are always available to guide you at your convenience.</p>
+<img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw78fb320b/images/home/Line-Design.svg"width="90%">
+
+<img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw78fb320b/images/home/Line-Design.svg" width="90">
+
+<footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section useful-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Delivery Information</a></li>
+                    <li><a href="#">International Shipping</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                    <li><a href="#">Track your Order</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Find a Store</a></li>
+                </ul>
+            </div>
+            <div class="footer-section information">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Offers & Contest Details</a></li>
+                    <li><a href="#">Help & FAQs</a></li>
+                    <li><a href="#">About Tanishq</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-us">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>Write to Us</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i>1800-266-0123</a></li>
+                    <li><a href="#"><i class="fa-solid fa-message"></i>Chat with Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section download-app">
+                <h3>Download the Tanishq App Now</h3>
+                <img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw13b9f54e/images/footer/tanishq-app-newqr.png" width="60%"><br/>
+                <div class="app-links">
+                    <a href="#"><img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw3727ec18/images/footer/appstore-d.png" width=40%></a>
+                    <a href="#"><img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwa17f8ad4/images/footer/Component%20145%20%E2%80%93%201@2x.png" width=40%></a>
+                </div>
+            
+        
+        
+        <p>© 2024 Titan Company Limited. All Rights Reserved.</p>
+          </div>
+        </div>
+        
+      </div>
+     
+      
+    </div>
+ </body>
+</html>
